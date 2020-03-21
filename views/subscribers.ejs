@@ -1,0 +1,20 @@
+<table class="table">
+    <thead class="thead-light">
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Country</th>
+        <th scope="col">Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% subscribers.forEach(function (subscriber) { %>
+    <tr>
+
+        <td style="text-transform: capitalize"><%= subscriber.first_name%> <%= subscriber.second_name%></td>
+        <td style="text-transform: uppercase"><%= subscriber.country%></td>
+        <td><%= subscriber.email%></td>
+
+    </tr>
+    <% }) %>
+    </tbody>
+</table>
